@@ -1,3 +1,4 @@
+
 /*
  * Copyright (c) 2018, Adam <Adam@sigterm.info>
  * All rights reserved.
@@ -261,4 +262,14 @@ public interface MenuEntrySwapperConfig extends Config
 	{
 		return true;
 	}
-}
+
+	@ConfigItem(
+		keyName = "swapStairs",
+		name = "Stairs",
+		description = "Swap Climb-Up with Climb. Alternate with Climb-Down using hotkey"
+	)
+	default boolean swapStairs()
+	{
+		return true;
+	}
+} 
